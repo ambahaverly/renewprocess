@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENEWAL LINKED WEBSITE</title>
+    <!-- Add Google Fonts link for Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* White background */
+            text-align: center; /* Center-align text */
+            font-family: 'Roboto', sans-serif; /* Roboto font */
+            position: relative; /* Positioning context for the ribbon */
+        }
+        .logo {
+            position: absolute;
+            top: 20px; /* Adjust as needed */
+            left: 20px; /* Adjust as needed */
+        }
+        .greeting {
+            color: blue; /* Blue text color */
+            font-size: 36px; /* Larger font size */
+            margin-top: 50px; /* Adjust vertical spacing as needed */
+        }
+        .contract-summary {
+            font-size: 24px; /* Larger font size for contract summary */
+            margin-top: 30px; /* Adjust vertical spacing as needed */
+        }
+        .product-name,
+        .add-ons,
+        .total-price {
+            font-size: 20px; /* Font size for product name */
+            margin-top: 10px; /* Adjust vertical spacing as needed */
+        }
+        .product-name-small {
+            font-size: 16px; /* Smaller font size */
+            color: darkgrey; /* Dark grey text color */
+            margin-top: 5px; /* Adjust vertical spacing as needed */
+        }
+        .hb-number {
+            color: blue; /* Blue text color */
+            font-size: 16px; /* Font size for HB Number */
+            position: absolute;
+            top: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+        }
+        .line {
+            border-top: 1px solid black; /* Horizontal line style */
+            width: 50%; /* Adjust line width as needed */
+            margin: 0 auto; /* Center the line */
+            margin-top: 20px; /* Adjust vertical spacing as needed */
+        }
+        .button {
+            display: inline-block;
+            background-color: blue; /* Blue button background color */
+            color: white; /* White font color */
+            padding: 10px 20px; /* Adjust button padding as needed */
+            border-radius: 20px; /* Rounded edges */
+            text-decoration: none; /* Remove default link underline */
+            margin-top: 20px; /* Adjust vertical spacing as needed */
+            transition: background-color 0.3s; /* Smooth background color transition */
+        }
+        .button:hover {
+            background-color: darkblue; /* Darken button color on hover */
+        }
+        .ribbon {
+            width: 100%; /* Full width */
+            height: 80px; /* Adjust ribbon height as needed */
+            background: linear-gradient(to right, blue, red); /* Blue to pink/red gradient background */
+            position: absolute; /* Position at the bottom */
+            bottom: 0; /* Position at the bottom of the webpage */
+            left: 0;
+            z-index: -1; /* Push the ribbon below other content */
+            margin-top: 20px; /* Adjust the margin between button and ribbon */
+        }
+        .additional-sentence {
+            color: white; /* White font color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Upload your logo here -->
+    <img src="path_to_your_logo" alt="Your Logo" class="logo">
+
+    <!-- Greeting text -->
+    <div class="greeting">
+        Hey! {NAME}
+    </div>
+
+    <!-- HB Number -->
+    <div class="hb-number">
+        HB NUMBER: [Fill this in]
+    </div>
+
+    <!-- Line -->
+    <hr class="line">
+
+    <!-- Contract Summary text -->
+    <div class="contract-summary">
+        Contract Summary
+    </div>
+
+    <!-- Product Name text -->
+    <div class="product-name">
+        Broadband Package
+    </div>
+
+    <!-- Second Product Name text -->
+    <div class="product-name-small">
+        Product Name: [Your Second Product Name Here]
+    </div>
+
+    <!-- Line -->
+    <hr class="line">
+
+    <!-- Add-ons text -->
+    <div class="add-ons">
+        Broadband Add-ons
+    </div>
+
+    <!-- Add-on Product Name text -->
+    <div class="product-name-small">
+        Add-on Product Name: [Your Add-on Product Name Here]
+    </div>
+    <!-- Line -->
+    <hr class="line">
+
+    <!-- Promotion -->
+    <div class="add-ons">
+        Promotional Offer
+    </div>
+
+    <!-- Add Promo code name e.g Hey24 -->
+    <div class="product-name-small">
+        Promo Name:[add Here]
+    </div>
+
+    <!-- Line -->
+    <hr class="line">
+
+    <!-- Total Monthly Price text -->
+    <div class="total-price">
+        Total Monthly Price
+    </div>
+    <!-- Total Monthly Price text -->
+    <div class="total-price">
+        <b>{AMOUNT HERE}</b>
+    </div>
+
+    <!-- Line for additional sentence -->
+    <div class="additional-sentence">
+        if you'd like to remove the add-on or change your order, please call 0330 822 1637
+    </div>
+    <br>
+    <div class="button">
+        RENEW
+    </div>
+    <div class="additional-sentence">
+        <b> Click "RENEW" to confirm your order.</b>
+    </div>
+
+    <!-- Ribbon -->
+    <div class="ribbon"></div>
+</body>
+</html>
